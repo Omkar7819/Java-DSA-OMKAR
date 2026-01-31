@@ -12,39 +12,35 @@ public class linearbinarysearch {
             }
 
         }
-        System.out.println("LLLL:  " + index);
-        return index;
+        System.out.println("Linear Search element not found");
+        return -1;
     }
 
 
     static int binarySearch(int[] arr, int target){
-        int index = 0;
+        
         int min = 0;
         int max = arr.length-1;
-        int mid = (min+max)/2;
+    
+        while(min<max){
+            int mid = (min+max)/2;
 
-        
-
-        
-
-        while(arr[mid]!=target){
-            mid = (min+max)/2;
             if(arr[mid]==target){
-            index = arr[mid];
-        }
+                System.out.println("BBBB:  " + mid);
+                return mid;
+            }
+
             if(arr[mid]<target){
                 min =mid+1;
             }
-            else if(arr[mid]>target){
-                max = min -1;
-            }
+
             else{
-                System.out.println("No elment present :");
+                max = mid -1;
             }
-            index = arr[mid];
+            
         }
-        System.out.println("BBBB:  " + index);
-        return index;
+        System.out.println("Binary Search elment not found");
+        return -1;
 
     }
     public static void main(String[] args) {
