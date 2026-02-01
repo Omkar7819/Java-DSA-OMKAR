@@ -29,7 +29,7 @@ public class leftmovebyK {
         // ArraysIO.display(arr);
 
         sc.close();
-        unt vvvvvijy=-=kjmb
+        ArraysIO.display(arr);
     }
 
 

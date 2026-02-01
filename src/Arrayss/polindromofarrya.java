@@ -4,22 +4,28 @@ public class polindromofarrya {
 
 
         static boolean polinamial(int[] arr){
-            int i=0, j=0;
+            int i=0; 
+            int j=arr.length-1;
 
-        for(i=0; i<arr.length;i++){
-            for(j=arr.length-1; j>=0; j-- ){
-                if(arr[i] != arr[j]){
-                    boolean pali =  false;
-                }
+        while(i<j){
+            if(arr[i]!=arr[j]){
+                return false;
             }
+            i++;
+            j--;
 
-        }return pali;
+        }
+        return true;
     }
 
     public static void main(String[] args) {
         
         int[] arr = ArraysIO.input();
-        polinamial(arr);
+        if(polinamial(arr)){
+            System.out.println("polindrom");
+        }else{
+            System.out.println("not polindrom");
+        }
 
     }
     

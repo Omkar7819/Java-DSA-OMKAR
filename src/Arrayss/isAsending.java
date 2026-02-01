@@ -1,18 +1,20 @@
 package Arrayss;
 
 public class isAsending {
-    public static boolean  main(String[] args) {
+    public static void main(String[] args) {
         
         int[]  arr = ArraysIO.input();
-        for(int i=arr.length; i<0; i++){
+        for(int i=1; i<arr.length; i++){
             if(arr[i]>=arr[i-1]){
+                System.out.println("Array is in ascending order");
+                break;
             }else{
-                
-                return false;
+                System.out.println("Array is not in ascending order");
+                break;
                 
             }
         }
-
+        
     }
     
 }

@@ -1,21 +1,28 @@
 package Arrayss;
 
 class reversearry {
-
-    
-    static int[] input(int[] arr, int j, int k) {
+    public static void main(String[] args) {
         
-        int[] arr1 = new int[arr.length];   
-        for(int i=arr.length-1; i>=0; i--){
-            arr1[j++] = arr[i];
+         int[] arr = ArraysIO.input();
+        // int[] arr1 = new int[arr.length];   
+        // int j = 0;
+        // for(int i=arr.length-1; i>=0; i--){
+        //     arr1[j++] = arr[i];
+        // }
+        // ArraysIO.display(arr1);
+
+
+        int start = 0, end = arr.length - 1;
+
+
+        while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+         
         }
-        return arr1;
-        
+        ArraysIO.display(arr);
     }
-
-    static int[] display(int[] arr){
-        ArraysIO.display(arr1);
-        return arr1;
-    }
-    
 }

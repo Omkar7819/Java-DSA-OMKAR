@@ -5,7 +5,6 @@ public class meargetwoarrays {
         
         int[]  arr1 = ArraysIO.input();
         int[]  arr2 = ArraysIO.input();
-        int n = 0;
         
 
         int[]  arr3 = new int[arr1.length+arr2.length];
