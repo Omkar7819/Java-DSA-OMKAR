@@ -9,6 +9,12 @@ public class meargetwoarrays {
 
         int[]  arr3 = new int[arr1.length+arr2.length];
 
+        // Arrays.sort(arr1);
+        // Arrays.sort(arr2);
+
+        Sorte.Sortes(arr1);
+        Sorte.Sortes(arr2);
+
         int i=0, j=0, k=0;
 
         while(i<arr1.length&&j<arr2.length){ 
