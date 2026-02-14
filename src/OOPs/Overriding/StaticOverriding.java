@@ -21,9 +21,11 @@ public class StaticOverriding {
 
         Parent p1 = new Child();
 
+        // Parent.m1(); // parent
+        // Child.m1(); // child
+
         p.m1(); // parent
         c.m1(); // child
-
-        p1.m1(); // Method Hiding // Parent
+        p1.m1(); // parent Handling 
     }
 }

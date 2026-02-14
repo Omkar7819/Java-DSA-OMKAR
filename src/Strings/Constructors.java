@@ -10,10 +10,10 @@ public class Constructors {
         String s2 = new String("Omkar");
         System.out.println(s2);
 
-        String s3 = new String(new StringBuffer());
+        String s3 = new String(new StringBuffer("Hello"));
         System.out.println(s3);
 
-        String s4 = new String(new StringBuilder());
+        String s4 = new String(new StringBuilder("World "));
         System.out.println(s4);        
         
 
@@ -21,6 +21,7 @@ public class Constructors {
 
         char[] ch = {'j','a','v','a'};
         String s5 = new String(ch);
+        System.out.println(s5);
         
         //Byte Array
         byte[] b = {97,98,99,100};

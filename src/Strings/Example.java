@@ -100,7 +100,7 @@ public class Example {
 
     public static void ex11() {
         StringBuffer sb = new StringBuffer(5);
-        String s = "..";
+        String s = "  ";
         if (sb.equals(s)) {
             System.out.println("Match 1");
         } else if (sb.toString().equals(s)) {
@@ -112,7 +112,28 @@ public class Example {
     }
 
     public static void main(String[] args) {
+        ex1();
+        System.out.println("-----------------------\n");
+        ex2();
+        System.out.println("-----------------------\n");
+        ex3();
+        System.out.println("-----------------------\n");
+        ex4();
+        System.out.println("-----------------------\n");
+        ex5();
+        System.out.println("-----------------------\n");
+        ex6();
+        System.out.println("-----------------------\n");
+        ex7();
+        System.out.println("-----------------------\n");
+        ex8();
+        System.out.println("-----------------------\n");
+        ex9();
+        System.out.println("-----------------------\n");
+        ex10();
+        System.out.println("-----------------------\n");
         ex11();
+        System.out.println("-----------------------\n");
     }
 
 }
